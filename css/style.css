@@ -1,6 +1,8 @@
 body {
   font-weight: bold;
   color: #333;
+  line-height:1.5;
+  letter-spacing:0.05em;
 }
 
 .main {
