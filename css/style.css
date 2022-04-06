@@ -266,4 +266,8 @@ overflow-x:scroll;
     font-size:20px;
     width: 200px;
   }
+  .contact-btn::after{
+    font-size:20px;
+    padding-left:8px;
+  }
  }
