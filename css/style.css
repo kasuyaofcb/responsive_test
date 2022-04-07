@@ -5,6 +5,12 @@ body {
   letter-spacing:0.05em;
 }
 
+.wrapper{
+  max-width:1080px;
+  margin:0 auto;
+  padding: 12px 20px;
+}
+
 .main {
   text-align: center;
 }
@@ -16,17 +22,16 @@ body {
 .header-wrapper {
   max-width:1080px;
   margin:0 auto;
-  padding: 12px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.wrapper-left {
+.header-logo {
   color:#26a69a;
 }
-.wrapper-right {
+.header-nav {
   padding: 8px;
   color:#26a69a;
 }
@@ -77,7 +82,7 @@ body {
 
 .fv {
   max-width: 1100px;
-  margin: 0 auto ;
+  margin: 32px auto 0 ;
 }
 
 
@@ -144,9 +149,10 @@ body {
 
 .btn {
   display:block;
-  width:200px;
+  width:300px;
   border: 1px solid #26a693;
-  color:#26a693;
+  color:#fff;
+  background:#26a693;
   border-radius: 60px;
   padding: 16px;
   margin-top: 32px;
@@ -156,16 +162,16 @@ body {
 }
 
 .btn:hover {
-  color: #fff;
   transition: 0.3s;
-  background:#26a69a;
+  background:#fff;
+  color:#26a693;
 }
 
 @media (max-width: 1100px) {
   .fv-card {
     flex-direction:column-reverse;
     align-items:center;
-    max-width:700px;
+    /* max-width:700px; */
     margin:0 auto;
 }
 .text-area{
@@ -177,14 +183,9 @@ body {
 }
 }
 
-.line{
-  height:50px;
-  width:100%;
-  background:#26a69a;
-}
-
 .category {
   margin: 48px auto 0;
+  padding: 8px;
   max-width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -194,7 +195,6 @@ body {
 .category-item {
   width:320px;
   min-width: 300px;
-  height: 400px;
   border-radius: 4px;
   box-shadow: 0 1px 12px 0 rgb(0 0 0 / 25%);
   padding: 32px;
@@ -221,28 +221,20 @@ overflow-x:scroll;
 .contact-btn {
   display:block;
   border: 1px solid #26a693;
-  color:#26a693;
+  color:#fff;
   border-radius: 60px;
   padding: 16px;
   margin: 48px auto;
   transition: 0.3s;
   text-align: center;
-  width: 600px;
-  font-size: 48px;
+  width: 300px;
+  font-size: 24px;
+  background: #26a693;
 }
-.contact-btn::after{
-  padding-left:16px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f0e0";
-  font-size: 48px;
-  color:  #26a693;
-}
-
 
 .contact-btn:hover {
-  background: #26a693;
-  color: #fff;
+  background: #FFF;
+  color:#26a693;
   transition: 0.3s;
 }
 
@@ -256,18 +248,26 @@ overflow-x:scroll;
 
 @media (max-width: 1100px) {
  .contact-btn{
-   font-size:36px;
-   width: 400px;
+   width: 50%;
  }
 }
 
 @media (max-width: 600px) {
   .contact-btn{
     font-size:20px;
-    width: 200px;
+    width: 80%;
   }
-  .contact-btn::after{
-    font-size:20px;
-    padding-left:8px;
-  }
+
  }
+
+ .footer{
+  background: #26a693;
+  color:#fff;
+  font-size:12px;
+  height:48px;
+  text-align:center;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+align-items:center;
+}
